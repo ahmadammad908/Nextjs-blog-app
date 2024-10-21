@@ -12,7 +12,7 @@ import {
 import { ModeToggle } from '../components/theme-btn';
 const Navbar = () => {
   return (
-    <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur border-b">
+    <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur border-b z-10">
       <div className="container mx-auto flex justify-between   items-center"> 
         <div className="text-xl font-bold">
           <Link href="/">
@@ -39,7 +39,7 @@ const Navbar = () => {
 
           </div>
         </ul>
-        <div className='md:hidden flex justify-center items-center'>
+        <div className="md:hidden flex justify-center items-center">
         <span  className="mx-2">
             <ModeToggle/>
 
