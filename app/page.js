@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button } from "@/components/ui/button";
-import typescripts from "../.next/static/media/type.jpg"
 const page = () => {
   return (
     <>
