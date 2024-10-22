@@ -38,7 +38,7 @@ const page = () => {
             <div class="flex flex-wrap -m-4">
               <div class="p-4 md:w-1/3">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://files.oaiusercontent.com/file-L5jonbGqdG8oQLhhev3pNAog?se=2024-10-22T08%3A57%3A11Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D2700ea8b-8dc0-4a6d-8a5e-8571266f3f00.webp&sig=GGuW7Fmc20gWNBzV5zSFpJ97JzI4RJ7ESro1kE3eZz0%3D" alt="blog"/>
+                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=600" alt="blog"/>
                     <div class="p-6">
                     <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style={{fontSize:"1.5em"}}>Python</h2>
 
@@ -67,7 +67,7 @@ const page = () => {
               </div>
               <div class="p-4 md:w-1/3">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://files.oaiusercontent.com/file-wOC29apy626Xo5UQFuSJkKar?se=2024-10-22T08%3A58%3A08Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Db6ef2e4a-20b2-4728-b9a8-87ba59a5d92e.webp&sig=G2FLv4%2BTlxoINd9a5yHpGf/A%2BekryC8KBNa67Mx5AtI%3D" alt="blog"/>
+                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&w=600" alt="blog"/>
                     <div class="p-6">
                       <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style={{fontSize:"1.5em"}}>JavaScript</h2>
                       <p class="leading-relaxed mb-3  mt-[30px]">JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code.</p>
@@ -95,7 +95,7 @@ const page = () => {
               </div>
               <div class="p-4 md:w-1/3">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://files.oaiusercontent.com/file-WVlCFhyiUhL6LHt2Vfewz5ka?se=2024-10-22T09%3A06%3A05Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D20038c47-536c-45bd-96f9-7873c99cdac7.webp&sig=6mrdKOhW/WCC/zNShucVeaN6q8qrCxneELlVqvtGing%3D" alt="blog"/>
+                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=600" alt="blog"/>
                     <div class="p-6">
                       <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style={{fontSize:"1.5em"}}>TypeScript</h2>
                       <p class="leading-relaxed mb-3 mt-[30px]">TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. It is designed for the development of large applications and transpiles to JavaScript..</p>
