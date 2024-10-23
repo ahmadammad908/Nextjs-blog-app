@@ -23,7 +23,7 @@ const Navbar = () => {
           <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
             Home
           </Link>
-          <Link href="/"  className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
+          <Link href="/blog"  className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
             Blog
           </Link>
           <Link href="/about"   className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
@@ -61,7 +61,7 @@ const Navbar = () => {
                     <Link href="/" className="hover:text-gray-400 ">
                       Home
                     </Link>
-                    <Link href="/" className="hover:text-gray-400 ">
+                    <Link href="/blog" className="hover:text-gray-400 ">
                       Blog
                     </Link>
                     <Link href="/about" className="hover:text-gray-400 ">
