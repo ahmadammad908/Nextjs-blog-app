@@ -1,41 +1,18 @@
 // pages/blog.js
-
 import React from 'react';
 import Link from 'next/link';
+import matter from "gray-matter"
+import fs from "fs"
 
-const blogs = [
-    {
-        title: "PHP",
-        description: "PHP is a general-purpose scripting language geared towards web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995. The PHP reference implementation is now produced by the PHP Group.",
-        slug: "first-blog",
-        image: "https://images.pexels.com/photos/360591/pexels-photo-360591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-        title: "Next Js",
-        description: "Next.js is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation",
-        slug: "second-blog",
-        image: "https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-        title: "Ruby",
-        description: "Ruby is an interpreted, high-level, general-purpose programming language. It was designed with an emphasis on programming productivity and simplicity. In Ruby, everything is an object, including primitive data types. It was developed in the mid-1990s by Yukihiro ",
-        slug: "third-blog",
-        image: "https://images.pexels.com/photos/270488/pexels-photo-270488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    { 
-        title: "Django",
-        description: "Django is a free and open-source, Python-based web framework that runs on a web server. It follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an independent organization established in the US as a 501 non-profit",
-        slug: "fourth-blog",
-        image: "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-        title: "C++",
-        description: "C++ (or “C-plus-plus”) is a generic programming language for building software. It's an object-oriented language. In other words, it emphasizes using data fields with unique attributes (a.k.a. objects) rather than logic or functions. A common example of an object is a user account on a website.",
-        slug: "fifth-blog",
-        image: "https://images.pexels.com/photos/226232/pexels-photo-226232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    // Add more blog objects as needed
-];
+
+const dirContent = fs.readdirSync("content", "utf-8")
+const blogs = dirContent.map(file=> {
+    const fileContent = fs.readFileSync(`content/${file}`, "utf-8")
+    const {data} = matter(fileContent)
+    return data 
+
+})
+
 
 const Blog = () => {
     return (
