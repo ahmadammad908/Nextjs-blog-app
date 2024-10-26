@@ -32,4 +32,42 @@ Here are some basic syntax rules to get you started:
 - **Variables**: Use `var`, `let`, or `const` to declare variables.
   ```javascript
   let name = "Ahmad";
-  const age = 25;
+  let b = 10; // Number
+  let sum = a + b;        // Addition
+  let difference = b - a; // Subtraction
+  let product = a * b;    // Multiplication
+  let quotient = b / a;   // Division
+  let remainder = b % a;  // Modulus
+
+
+## Variables and Data Types
+In JavaScript, you can declare variables using var, let, and const:
+- **Variables**: Use `var`, `let`, or `const` to declare variables The data types include numbers, strings, booleans, arrays, and objects.
+   ```javascript
+  let age = 65;          // Number
+  const name = "Ahmad";  // String
+  let isStudent = true;  // Boolean
+  let colors = ["red", "blue", "green"]; // Array
+  let person = { name: "Ahmad", age: 25 }; // Object
+
+## Basic Operators
+Operators are used to perform operations on variables and values.
+- **Variables**: Use `let`.
+   ```javascript
+  let a = 5;
+  let b = 10;
+  let sum = a + b;        // Addition
+  let difference = b - a; // Subtraction
+  let product = a * b;    // Multiplication
+  let quotient = b / a;   // Division
+  let remainder = b % a;  // Modulus
+
+## Functions
+Functions allow you to reuse code. You can define a function using the function keyword.
+```javascript
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+console.log(greet("Ahmad")); // Output: Hello, Ahmad!
+

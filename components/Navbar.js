@@ -13,7 +13,7 @@ import { ModeToggle } from '../components/theme-btn';
 const Navbar = () => {
   return (
     <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur border-b z-10">
-      <div className="container mx-auto flex justify-between   items-center"> 
+      <div className="container mx-auto flex justify-between   items-center">
         <div className="text-xl font-bold">
           <Link href="/">
             Ahmad Blogs
@@ -23,27 +23,29 @@ const Navbar = () => {
           <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
             Home
           </Link>
-          <Link href="/blog"  className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
+          <Link href="/blog" className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
             Blog
           </Link>
-          <Link href="/about"   className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
+          <Link href="/about" className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
             About Us
           </Link>
-          <Link href="/contact"  className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
+          <Link target="_blank"
+            rel="noopener noreferrer"
+            href="mailto: ahmadammad.me789@gmail.com" className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
             Contact
           </Link>
           <div className='flex items-center' >
             <Button variant="outline" className="mx-1">Login</Button>
             <Button variant="outline" className="mx-1">Sign Up</Button>
-            <ModeToggle/>
+            <ModeToggle />
 
           </div>
         </ul>
         <div className="md:hidden flex justify-center items-center">
-        <span  className="mx-2">
-            <ModeToggle/>
+          <span className="mx-2">
+            <ModeToggle />
 
-            </span>
+          </span>
           <Sheet>
             <SheetTrigger className='flex'>
 
@@ -52,7 +54,7 @@ const Navbar = () => {
               </svg>
 
             </SheetTrigger>
-          
+
             <SheetContent>
               <SheetHeader>
                 <SheetTitle className="text-bold my-4">Ahmad Blogs</SheetTitle>
@@ -67,9 +69,12 @@ const Navbar = () => {
                     <Link href="/about" className="hover:text-gray-400 ">
                       About Us
                     </Link>
-                    <Link href="/contact" className="hover:text-gray-400">
+                    <a href="mailto: ahmadammad.me789@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-gray-400">
                       Contact
-                    </Link>
+                    </a>
                     <div>
                       <Button variant="outline" className="mx-1 text-xs">Login</Button>
                       <Button variant="outline" className="mx-1 text-xs">Sign Up</Button>
