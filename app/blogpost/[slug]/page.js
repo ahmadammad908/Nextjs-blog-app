@@ -1,4 +1,7 @@
+// app/[slug]/page.js
+
 import fs from "fs";
+import path from "path";
 import matter from "gray-matter";
 import rehypeDocument from 'rehype-document';
 import rehypeFormat from 'rehype-format';
@@ -9,12 +12,12 @@ import { unified } from 'unified';
 import rehypePrettyCode from "rehype-pretty-code";
 import { transformerCopyButton } from '@rehype-pretty/transformers';
 
+// This component will load markdown content based on the URL slug
 export default async function Page({ params }) {
-  // Ensure params are awaited
-  const { slug } = await params;
-  const filepath = `content/${slug}.md`;
+  const { slug } = params; // Destructure slug from params
+  const filepath = path.join(process.cwd(), "content", `${slug}.md`);
 
-  // Try to read the file content and handle potential errors
+  // Attempt to read the markdown file
   let fileContent;
   try {
     fileContent = fs.readFileSync(filepath, "utf-8");
@@ -23,14 +26,14 @@ export default async function Page({ params }) {
     return <p>Error loading content. Please check the file path and try again.</p>;
   }
 
-  // Parse the file content and handle missing metadata
+  // Parse front matter (metadata) from markdown content
   const { content, data } = matter(fileContent || '');
   if (!data.title || !data.description) {
     console.error("Missing front matter fields");
     return <p>Error: Missing metadata in the blog post. Ensure 'title' and 'description' are provided.</p>;
   }
 
-  // Configure processor and handle processing errors
+  // Process markdown to HTML using unified
   let htmlContent;
   try {
     const processor = unified()
@@ -55,7 +58,7 @@ export default async function Page({ params }) {
     return <p>Error processing content. Please try again later.</p>;
   }
 
-  // Render the page content
+  // Render the HTML content with metadata
   return (
     <div className="max-w-5xl mx-auto p-4">
       <h1 className="text-5xl font-bold mb-4">{data.title}</h1>
