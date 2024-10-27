@@ -1,6 +1,6 @@
 ---
-title: JavaScript Tutorial in Hindi 
-description: This is JavaScript tutorial and this is for learning JavaScript
+title: JavaScript 
+description: JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code.
 slug: js-tutorial-in-hindi
 date: 31/02/2024
 author: Ahmad Ammad
