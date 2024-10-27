@@ -25,7 +25,7 @@ JavaScript is a scripting language that enables you to create dynamically updati
 
 To start coding in JavaScript, you need a text editor and a web browser. Popular text editors include [Visual Studio Code](https://code.visualstudio.com/), Sublime Text, and Atom. Most modern web browsers like Chrome, Firefox, and Edge support JavaScript.
 
-## Basic Syntax
+## 1. Basic Syntax
 
 Here are some basic syntax rules to get you started:
 
@@ -40,7 +40,7 @@ Here are some basic syntax rules to get you started:
   let remainder = b % a;  // Modulus
 
 
-## Variables and Data Types
+## 2. Variables and Data Types
 In JavaScript, you can declare variables using var, let, and const:
 - **Variables**: Use `var`, `let`, or `const` to declare variables The data types include numbers, strings, booleans, arrays, and objects.
    ```javascript
@@ -50,7 +50,7 @@ In JavaScript, you can declare variables using var, let, and const:
   let colors = ["red", "blue", "green"]; // Array
   let person = { name: "Ahmad", age: 25 }; // Object
 
-## Basic Operators
+## 3. Basic Operators
 Operators are used to perform operations on variables and values.
 - **Variables**: Use `let`.
    ```javascript
@@ -61,13 +61,123 @@ Operators are used to perform operations on variables and values.
   let product = a * b;    // Multiplication
   let quotient = b / a;   // Division
   let remainder = b % a;  // Modulus
-
-## Functions
+## 4. Functions
 Functions allow you to reuse code. You can define a function using the function keyword.
-```javascript
-function greet(name) {
-  return "Hello, " + name + "!";
-}
+- **Functions**
+   ```javascript
+  function greet(name) {
+    return "Hello , "  + name + "!";
+  }
+  console.log(greet("Ahmad")),
+  
+## 5. Arrow Functions
+You can also use arrow functions, which offer a shorter syntax:
+- **Arrow Functions**: Use `const`.
+   ```javascript
+  const greet = (name) => "Hello , " + name + "!";
+    console.log(greet("Ahmad"));
 
-console.log(greet("Ahmad")); // Output: Hello, Ahmad!
 
+## 6. Conditionals 
+Use if, else if, and else statements to make decisions in your code.
+- **if , else if, and else**
+   ```javascript
+  let age = 20 ; 
+
+  if(age < 18 ){
+    console.log("You are a minor.");
+  } else if(age >= 18 && age < 60 ){
+    console.log("You are an adult.");
+  } else {
+    console.log("You are a senior");
+  }
+## 7. Loops
+Loops help you repeat tasks efficiently. Common types include for, while, and do...while.
+- **For Loop**
+   ```javascript
+  for (let i = 0; i < 5; i++) {
+    console.log(i); //Output: 0, 1, 2 ,3 , 4 
+  }
+- **While Loop**
+   ```javascript
+   let i = 0 ;
+   while (i < 5){
+    console.log(i);
+    i++
+   }
+- **Do...While Loop**
+   ```javascript
+   let i = 0 ;
+   do {
+    console.log(i);
+    i++
+   } while (i < 5)
+## 8. Array Methods 
+JavaScript provides useful methods to work with arrays.
+- **Array Methods**
+   ```javascript
+  let numbers = [1,2,3,4,5];
+
+  numbers.push(6);    // Adds 6 to the end
+  numbers.pop();      // Removes the last element (5)
+  numbers.shift();    // Removes the first element (1)
+  numbers.unshift(0); // Adds 0 at the beginning
+  console.log(numbers);//Output: [0,2,3,4,6] 
+
+  numbers.forEach((num)=> console.log(num * 2));  // Output: 0, 4, 6, 8, 12
+## 9. Objects
+Objects store data in key-value pairs.
+- **Objects**
+   ```javascript
+  let student = {
+    name: "Ahmad",
+    age:25,
+    greet() {
+      console.log("Hello, my name is " + this.name);
+    },
+  };
+   
+   console.log(student.name); // Output: Ahmad
+   student.greet();           //Output: Hello, my name is Ahmad
+## 10. Classes
+Classes provide a template for creating objects.
+- **Classes**
+   ```javascript
+  class student = {
+    constructor(name , age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    greet() {
+      return `Hello, my name is ${this.name} and I am ${this.age} years old`;
+    }
+   }
+   
+   let student1 = new student("Ahmad", 25);
+   console.log(student1.greet()); //Output: Hello, my name is Ahmad and I am 25 years old.
+## 11. Promises and Async/Await
+JavaScript supports asynchronous programming with Promises and async/await.
+- **Promises**
+   ```javascript
+  let fetchData = new Promise((resolve, reject)=> {
+    let success = true;
+    if (success) resolve("Data Fetched Successfully");
+    else reject("Failed to fetch data");
+  });
+
+  fetchData
+  .then((result) => console.log(result)) // Output: Data fetched successfully
+  .catch((error) => console.log(error));
+- **Async/Await**
+   ```javascript
+  async function getData() {
+    try {
+      let result = await fetchData;
+      console.log(result);
+    }catch (error) {
+      console.log(error);
+    }
+  }
+  
+  getData();
