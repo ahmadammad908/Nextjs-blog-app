@@ -5,6 +5,7 @@ slug: js-tutorial-in-hindi
 date: 31/02/2024
 author: Ahmad Ammad
 image: "https://images.pexels.com/photos/360591/pexels-photo-360591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+solution: Speed. JavaScript is an “interpreted” language,so it cuts down on the time needed for compilation in other languages like Java.Additionally, it is a client-side script that shortens the time required to establish a serverconnection, which speeds up program execution.
 ---
 
 # Introduction

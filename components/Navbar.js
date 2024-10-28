@@ -1,8 +1,12 @@
-import React from 'react';
+"use client";
+
+
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -11,6 +15,10 @@ import {
 } from "@/components/ui/sheet"
 import { ModeToggle } from '../components/theme-btn';
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const closeMenu = () => {
+    setOpen(false);
+  };
   return (
     <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur border-b z-10">
       <div className="container mx-auto flex justify-between   items-center">
@@ -60,15 +68,23 @@ const Navbar = () => {
                 <SheetTitle className="text-bold my-4">Ahmad Blogs</SheetTitle>
                 <SheetDescription>
                   <ul className='flex flex-col gap-6' >
-                    <Link href="/" className="hover:text-gray-400 ">
+                    <SheetClose  asChild>
+                    <Link href="/" className="hover:text-gray-400 " >
                       Home
                     </Link>
-                    <Link href="/blog" className="hover:text-gray-400 ">
-                      Blog
-                    </Link>
-                    <Link href="/about" className="hover:text-gray-400 ">
-                      About Us
-                    </Link>
+                    </SheetClose>
+                  
+                    <SheetClose asChild>
+                      <Link href="/blog" className="hover:text-gray-400 " >
+                        Blog
+                      </Link>
+                    </SheetClose>
+                    <SheetClose  asChild>
+                      <Link href="/about" className="hover:text-gray-400 ">
+                        About Us
+                      </Link>
+                    </SheetClose>
+
                     <a href="mailto: ahmadammad.me789@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
