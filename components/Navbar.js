@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between   items-center">
         <div className="text-xl font-bold">
           <Link href="/">
-            Ahmad Blogs
+            Tech Blogs
           </Link>
         </div>
         <ul className="md:flex hidden space-x-4 items-center">
@@ -32,7 +32,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link href="/blog" className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
-            Blog
+            Blogs
           </Link>
           <Link href="/about" className="hover:scale-105 hover:font-semibold transition-transform duration-300 ">
             About Us
@@ -65,7 +65,7 @@ const Navbar = () => {
 
             <SheetContent>
               <SheetHeader>
-                <SheetTitle className="text-bold my-4">Ahmad Blogs</SheetTitle>
+                <SheetTitle className="text-bold my-4">Tech Blogs</SheetTitle>
                 <SheetDescription>
                   <ul className='flex flex-col gap-6' >
                     <SheetClose  asChild>
@@ -76,7 +76,7 @@ const Navbar = () => {
                   
                     <SheetClose asChild>
                       <Link href="/blog" className="hover:text-gray-400 " >
-                        Blog
+                        Blogs
                       </Link>
                     </SheetClose>
                     <SheetClose  asChild>

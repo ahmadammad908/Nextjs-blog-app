@@ -6,6 +6,7 @@ const Page = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false); // Add loading state
 
     const isValidEmail = (email) => {
         // Basic email validation
@@ -22,6 +23,7 @@ const Page = () => {
             return;
         }
 
+        setLoading(true); // Start loading
         const serviceId = 'service_omyscys';
         const templateId = 'template_gqjdfpp';
         const publicKey = 'bYaTHHUui2VrIJoaQ';
@@ -41,6 +43,9 @@ const Page = () => {
                 console.log("Error sending email", error);
                 setError('Failed to subscribe. Please try again.');
                 setMessage('');
+            })
+            .finally(() => {
+                setLoading(false); // Stop loading after completion
             });
     };
     
@@ -70,14 +75,15 @@ const Page = () => {
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
-                            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit">
-                                Subscribe
+                            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit" disabled={loading}>
+                                {loading ? 'Subscribing...' : 'Subscribe'}
                             </button>
                         </form>
 
-                        {/* Display success or error message */}
-                        {message && <p className="mt-4 text-green-500">{message}</p>}
-                        {error && <p className="mt-4 text-red-500">{error}</p>}
+                        {/* Display loading message only when loading, otherwise show success or error message */}
+                        {loading && <p className="mt-4 text-blue-600">Processing your request...</p>}
+                        {!loading && message && <p className="mt-4 text-green-600">{message}</p>}
+                        {!loading && error && <p className="mt-4 text-red-600">{error}</p>}
                     </div>
                 </div>
             </section>

@@ -19,7 +19,7 @@ const About = () => {
                                 <div className="flex flex-col items-center space-x-2 pt-8">
                                     <img
                                         alt="avatar"
-                                        src="https://ahmadev2.netlify.app/assets/Ahmad-a70faca2.jpg"
+                                        src="https://media-mct1-1.cdn.whatsapp.net/v/t61.24694-24/456031128_1752819882140580_2321018509068907918_n.jpg?ccb=11-4&oh=01_Q5AaIE8R6gg9v-fRb5yEaBq5WmevosP3aYC1UfN3m-MqaLi6&oe=67323CA9&_nc_sid=5e03e0&_nc_cat=102"
                                         width="192"
                                         height="192"
                                         decoding="async"
