@@ -38,3 +38,87 @@ To start using C, You need two things:
     printf("Hello Jarvis!");
     return 0;
   }
+## 2. Data Types and Variables
+In C, data types specify the type of data that a variable can hold.
+
+## Basic Data Types:
+- **int** : For integers, e.g., 
+  ```javascript
+  int age = 25;
+- **float** :  For single-precision floating-point numbers, e.g.,
+  ```javascript
+  float salary = 55000.50;
+- **double** :  For double-precision floating-point numbers, e.g.,
+  ```javascript
+  double pi = 3.14159;
+- **char** : For single characters, e.g.,
+  ```javascript
+  char grade = 'A';
+
+- ## Declaring Variables:
+  ```javascript
+  int age =25; 
+  float salary = 55000.5 ;
+  char grade = 'A'; 
+ ## 3. Operators:
+C includes several operators for performing arithmetic, logical, and relational operations.
+## Arithmetic Operators:
+- **+** : Addition
+- **-** : Subtraction
+- *: Multiplication
+- **/** : Division
+- **%** : Modulus (remainder)
+  ```javascript
+  #include <stdio.h>
+
+  int main(){
+    int a = 10 , b = 3; 
+    printf("Addition: %d\n", a + b)
+    printf("Subtraction: %d\n", a - b);
+    printf("Multiplication: %d\n", a * b);
+    printf("Division: %d\n", a / b);
+    printf("Modulus: %d\n", a % b);
+    return 0;
+  }
+## Relational Operators:
+- **==** : Equal to
+- **!=** : Not equal to
+- **>**: Greater than
+- **<** :  Less than
+- **>=** : Greater than or equal to
+- **<=** : Less than or equal to
+  ```javascript
+  #include <stdio.h>
+
+  int main(){
+    int a = 10 , b = 3; 
+    printf("Equal to: %d\n", a == b);
+    printf("Not equal to: %d\n", a != b);
+    printf("Greater than: %d\n", a > b);
+    printf("Less than: %d\n", a < b);
+    printf("Greater or equal to: %d\n", a >= b);
+    printf("Less or equal to: %d\n", a <= b);
+    return 0;
+  }
+##  Logical Operators
+- **&&** : Logical AND – True if **both** conditions are true
+- **||** : Logical OR – True if **at least one** condition is true
+- **!**: Logical NOT – Inverts the truth value of a condition (True becomes False, and False becomes True)
+  ```javascript
+  #include <stdio.h>
+
+  int main(){
+    int a = 10 , b = 3; 
+    printf("Logical AND: %d\n", (a > b) && (b < 10));
+    printf("Logical OR: %d\n", (a < b) || (b > 5));
+    printf("Logical NOT: %d\n", ! (a == b));
+    return 0;
+  }
+##  Assignment Operators
+Assignment operators assign values to variables.
+- **=**  :  Assign	
+- **+=** : Add and assign	
+- **- =** :  Subtract and assign	
+- ***=** :  Multiply and assign	
+- **/=** :  Divide and assign	
+- **%=** :  Modulus and assign	
