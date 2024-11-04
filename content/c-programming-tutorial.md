@@ -54,7 +54,6 @@ In C, data types specify the type of data that a variable can hold.
 - **char** : For single characters, e.g.,
   ```javascript
   char grade = 'A';
-
 - ## Declaring Variables:
   ```javascript
   int age =25; 
@@ -122,3 +121,136 @@ Assignment operators assign values to variables.
 - ***=** :  Multiply and assign	
 - **/=** :  Divide and assign	
 - **%=** :  Modulus and assign	
+  ```javascript
+  #include <stdio.h>
+
+  int main(){
+    int a = 10 ;
+    a += 2;  // a = a + 2
+    printf("Add and assign: %d\n", a);
+    a -= 3;  // a = a - 3
+    printf("Subtract and assign: %d\n", a);
+    a *= 2;  // a = a * 2
+    printf("Multiply and assign: %d\n", a);
+    a /= 4;  // a = a / 4
+    printf("Divide and assign: %d\n", a);
+    a %= 3;  // a = a % 3
+    printf("Modulus and assign: %d\n", a);
+    return 0;
+  }
+##  Increment and Decrement Operators
+These operators increase or decrease the value of a variable by 1.
+- **++** : Increment
+- **--** : Decrement 
+  ```javascript
+  #include <stdio.h>
+
+  int main(){
+    int a = 5 ;
+    printf("Initial value: %d\n", a);
+    printf("Post-increment: %d\n", a++);
+    printf("After post-increment: %d\n", a);
+    printf("Pre-increment: %d\n", ++a);
+    printf("After pre-increment: %d\n", a);
+    return 0;
+  }
+## 4. Control Flow Statements
+Control flow statements allow you to control the sequence in which statements are executed.
+- ## if…else Statement:
+  ```javascript
+  int age = 20 ; 
+  if(age >= 18){
+    printf("You are an adult.");
+  }else {
+    printf("You are not an adult")
+  }
+- ## Switch Statement:
+  ```javascript
+  int day = 4;
+   switch (day) {
+    case 1:
+        printf("Monday");
+        break;
+    case 2:
+        printf("Tuesday");
+        break;
+    default:
+       printf("Other day");
+    }
+## 5. Loops
+- **for loop:**  Used for looping a fixed number of times.
+- **while loop:** Continues looping as long as a specified condition is true.
+- **do…while loop:** Executes at least once before checking the condition.
+- ## for loop:
+  ```javascript
+  for (int i = 0; i < 5; i++) {
+    printf("%d\n", i);
+  }
+- ##  while loop: 
+  ```javascript
+  #include <stdio.h>
+
+  int main() {
+    int i = 1;
+
+    // While loop to print numbers from 1 to 5
+    while (i <= 5) {
+      printf("%d\n", i);
+      i++;  // Increment i
+    }
+
+    return 0;
+  }
+- ## do…while loop:
+  ```javascript
+  #include <stdio.h>
+
+  int main() {
+    int i = 1;
+
+    // Do-while loop to print numbers from 1 to 5
+    do {
+      printf("%d\n", i);
+      i++;  // Increment i
+    } while (i <= 5);
+
+    return 0;
+  }
+## 6. Funtions
+Functions allow you to break down complex programs into smaller, manageable parts.
+- ## Defining and Calling Functions:
+  ```javascript
+  int add(int a, int b) {
+    return a + b;
+  }
+
+  int main() {
+    int result = add(3, 4);
+    printf("Result: %d", result);
+    return 0;
+  }
+## 7. Arrays
+An array is a collection of variables of the same type.
+- ## Declaring and Initializing Arrays:
+  ```javascript
+  int numbers[5] = {1, 2, 3, 4, 5};
+- ## Accessing Array Elements:
+  ```javascript
+  printf("%d", numbers[0]);  // Outputs 1
+## 8. Pointers
+Pointers are variables that store the memory address of another variable.
+- ## Pointer Syntax:
+  ```javascript
+  int x = 10;
+  int *ptr = &x;
+  printf("%d", *ptr);  // Dereferences ptr to output the value of x
+## 9. Structs
+A struct (short for structure) is a user-defined data type that allows you to combine different types of data.
+## Defining a Struct:
+  ```javascript
+  struct Person {
+    char name[50];
+    int age;
+  };
+
+  struct Person person1 = {"Alice", 30};
