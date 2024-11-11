@@ -3,7 +3,7 @@ title: JavaScript
 description: JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code.
 slug: js-tutorial-in-hindi
 date: 31/02/2024
-author: Ahmad Ammad
+author: Anonymous
 image: "https://images.pexels.com/photos/360591/pexels-photo-360591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 solution: Speed. JavaScript is an “interpreted” language,so it cuts down on the time needed for compilation in other languages like Java.Additionally, it is a client-side script that shortens the time required to establish a serverconnection, which speeds up program execution.
 ---
