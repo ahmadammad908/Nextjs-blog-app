@@ -19,7 +19,7 @@ const About = () => {
                                 <div className="flex flex-col items-center space-x-2 pt-8">
                                     <img
                                         alt="avatar"
-                                        src="https://media-mct1-1.cdn.whatsapp.net/v/t61.24694-24/456031128_1752819882140580_2321018509068907918_n.jpg?ccb=11-4&oh=01_Q5AaIE8R6gg9v-fRb5yEaBq5WmevosP3aYC1UfN3m-MqaLi6&oe=67323CA9&_nc_sid=5e03e0&_nc_cat=102"
+                                        src="https://i.pinimg.com/236x/73/22/af/7322af984ed49d3f15eababb602f4fca.jpg"
                                         width="192"
                                         height="192"
                                         decoding="async"
@@ -30,13 +30,12 @@ const About = () => {
                                         style={{ color: "transparent" }}
                                     />
                                     <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
-                                        Ahmad Ammad 🖥️
+                                     Anonymous 🖥️
                                     </h3>
                                     <div className="font-bold text-gray-700 dark:text-gray-300" style={{ fontFamily: "sans-serif" }}>
                                         Lead Frontend Developer
                                     </div>
-                                    <div className="flex space-x-3 pt-6">
-                                        {/* Social icons, keeping colors consistent in both themes */}
+                                    {/* <div className="flex space-x-3 pt-6">
                                         <a className="text-sm transition dark:text-gray-100" target="_blank" rel="noopener noreferrer" href="https://github.com/ahmadammad908">
                                             <span className="sr-only">GitHub</span>
                                             <svg
@@ -74,7 +73,7 @@ const About = () => {
                                                 <path d="M 5.5 7 C 3.0385965 7 1 9.0385965 1 11.5 L 1 38.5 C 1 40.961404 3.0385965 43 5.5 43 L 44.5 43 C 46.961404 43 49 40.961404 49 38.5 L 49 11.5 C 49 11.486654 48.996213 11.474258 48.996094 11.460938 C 48.996537 11.440306 49 11.421244 49 11.400391 L 48.990234 11.400391 C 48.934958 8.9848435 46.92738 7 44.5 7 L 5.5 7 z M 8.171875 9 L 41.865234 9 L 25 20.779297 L 8.171875 9 z M 4.8398438 9.1074219 L 25 23.220703 L 45.189453 9.1171875 C 46.192029 9.4257198 46.96467 10.363517 46.994141 11.4375 C 46.975926 11.681812 46.765817 12.080784 46.462891 12.412109 C 46.146099 12.7586 45.833984 12.976563 45.833984 12.976562 L 45.828125 12.980469 L 24.998047 27.775391 L 4.171875 13.080078 L 4.1660156 13.076172 C 4.1660156 13.076172 3.8539008 12.860163 3.5371094 12.513672 C 3.2203595 12.167182 3 11.739744 3 11.5 C 3 10.389458 3.8030909 9.4120336 4.8398438 9.1074219 z M 47 14.597656 L 47 38.5 C 47 39.838596 45.838596 41 44.5 41 L 44 41 L 44 16.732422 L 46.966797 14.625 L 46.974609 14.617188 C 46.974952 14.616953 46.998058 14.599 47 14.597656 z M 3 14.699219 C 3.0016742 14.700381 3.0230849 14.716556 3.0234375 14.716797 L 3.0273438 14.720703 L 3.0332031 14.724609 L 6 16.818359 L 6 41 L 5.5 41 C 4.1614035 41 3 39.838596 3 38.5 L 3 14.699219 z M 42 18.152344 L 42 41 L 8 41 L 8 18.228516 L 25.001953 30.224609 L 42 18.152344 z"></path>
                                             </svg>
                                         </a>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="prose max-w-none pb-8 pt-8 xl:col-span-2 text-gray-800 dark:text-gray-300">
                                     <p className="font-bold">
